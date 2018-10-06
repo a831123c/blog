@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand">軌跡境界</a>
+        <a class="navbar-brand">保羅的雜談園地</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -36,16 +36,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index">Home</a>
+              <a class="nav-link" href="about">關於我</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="post">Sample Post</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact">Contact</a>
+              <a class="nav-link" href="post">文章</a>
             </li>
           </ul>
         </div>
