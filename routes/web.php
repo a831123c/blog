@@ -18,9 +18,7 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('index');
 });
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about',"Home@index");
 Route::get('/contact', function () {
     return view('contact');
 });
