@@ -20,7 +20,16 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-
+    <style>
+      .rs_plurk .fa-stack-2x {
+        color: #cf682f;
+      }
+      .rs_plurk .fa-plurk {
+          font-family: arial;
+          font-style: normal;
+          font-weight: bold;
+      }
+    </style>
   </head>
 
   <body>
@@ -36,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="about">關於我</a>
+              <a class="nav-link" href="about">關於保羅</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="post">文章</a>
@@ -53,8 +62,8 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="page-heading">
-              <h1>About Me</h1>
-              <span class="subheading">This is what I do.</span>
+              <h1>這是保羅</h1>
+              <span class="subheading">朝著後端工程師的目標前進</span>
             </div>
           </div>
         </div>
@@ -65,9 +74,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+          <p>是個非常樂觀的人，軌跡迷</p>
+          <p>專精網頁後端開發、資料庫以及伺服器</p>
+          <p>會的語言：PHP、MySQL、Javascript</p>
+          <p>FrameWork：Codeigniter、Laravel</p>
+          <p>OS：Windows、Linux</p>
         </div>
       </div>
     </div>
@@ -81,23 +92,15 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                <a class='rs_plurk' href='https://www.plurk.com/Paul_shu' target="_blank">
+                  <span class='fa-stack fa-lg'>
+                  <i class='fa fa-circle fa-stack-2x'></i>
+                  <i class='fa fa-plurk fa-stack-1x fa-inverse'>P</i>
                   </span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
+                <a href="https://github.com/a831123c" target="_blank">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -105,7 +108,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+            <p class="copyright text-muted">Copyright &copy; Divgod Website 2018</p>
           </div>
         </div>
       </div>
