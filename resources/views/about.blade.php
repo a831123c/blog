@@ -44,8 +44,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about">關於保羅</a>
+            <li class="nav-item active">
+              <a class="nav-link">關於保羅</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="post">文章</a>
