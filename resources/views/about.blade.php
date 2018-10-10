@@ -86,33 +86,7 @@
     <hr>
 
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a class='rs_plurk' href='https://www.plurk.com/Paul_shu' target="_blank">
-                  <span class='fa-stack fa-lg'>
-                  <i class='fa fa-circle fa-stack-2x'></i>
-                  <i class='fa fa-plurk fa-stack-1x fa-inverse'>P</i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/a831123c" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; Divgod Website 2018</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+	 @include('footer');
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
