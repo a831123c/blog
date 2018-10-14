@@ -66,7 +66,7 @@ return [
     */
 
     'timezone' => 'Asia/Taipei',
-    'faker_locale' => 'zh_TW',
+    'faker_locale' => 'en_US',
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration

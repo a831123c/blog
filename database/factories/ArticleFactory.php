@@ -1,10 +1,9 @@
 <?php
 
-use Faker\Generator;
+//use Faker\Generator as Faker;
 use Faker\Factory;
-
-$factory->define(App\Models\Article::class, function (Faker\Generator $faker) {
-    $faker = \Faker\Factory::create();
+$faker = Faker\Factory::create('en_US');
+$factory->define(\App\Models\Article::class, function ($faker) {
     return [
         'title' => $faker->text,
         'content' => $faker->sentence,
