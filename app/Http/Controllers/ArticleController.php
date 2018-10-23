@@ -26,8 +26,8 @@ class ArticleController extends Controller
 
     public function show($id)
     {
-        $article = new Article();
-        $post = $article->getArticle($id);
+        $post = Article::getArticle($id);
+        $data['count'] = count($post);
         $data['post'] = $post;
         return view('post', $data);
     }
