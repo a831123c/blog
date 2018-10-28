@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -155,12 +155,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Divgod Website 2018</p>
-        </div>
-        <!-- /.container -->
-    </footer>
+    @include('postfooter');
 
     <!-- Bootstrap core JavaScript -->
     <script src={{asset('vendor/jquery/jquery.min.js')}}></script>
