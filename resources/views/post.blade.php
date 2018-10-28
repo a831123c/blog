@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="{{asset('img/icon.png')}}">
     <!-- Custom styles for this template -->
     <link href="{{asset('css/blog-post.css')}}" rel="stylesheet">
 

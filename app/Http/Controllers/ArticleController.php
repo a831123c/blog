@@ -16,7 +16,7 @@ class ArticleController extends Controller
 
     public function create()
     {
-        //
+        return view('newpost');
     }
 
     public function store(Request $request)
