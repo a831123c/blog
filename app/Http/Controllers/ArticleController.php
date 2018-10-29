@@ -21,7 +21,8 @@ class ArticleController extends Controller
 
     public function store(Request $request)
     {
-        //
+        print_r($request->all());
+        //echo $request->input('title');
     }
 
     public function show($id)

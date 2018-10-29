@@ -31,7 +31,7 @@
 
     <!-- Page Content -->
     <div class="container" style="font-size:20px">
-        <form action="post" method="POST" name="article" onsubmit="return check()">
+        <form action="/post" method="POST" name="article" onsubmit="return check()">
             <div style="margin-top:50px" class="row">
                 請輸入標題：<input type="text" name="title">&nbsp;&nbsp;&nbsp;
                 <input type="submit" class="btn btn-info" value="發文">
@@ -40,7 +40,7 @@
                 請輸入內文：<br>
                 <textarea style="margin-top:20px" name="editor"></textarea>
             </div>
-
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
         </form>
     </div>
     <!-- /.container -->
