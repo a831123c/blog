@@ -21,13 +21,17 @@ class ArticleController extends Controller
 
     public function store(Request $request)
     {
-        print_r($request->all());
-        //echo $request->input('title');
+        $title = $request->input('title');
+        //change content to html entity
+        $content = htmlspecialchars($request->input('editor'));
+        $result = Article::setNewArticle($title, $content);
     }
 
     public function show($id)
     {
         $post = Article::getArticle($id);
+        //decode content to HTML
+        $post['content'] = htmlspecialchars_decode($post['content']);
         $data['count'] = count($post);
         $data['post'] = $post;
         return view('post', $data);

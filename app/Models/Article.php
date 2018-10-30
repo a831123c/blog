@@ -19,4 +19,13 @@ class Article extends Test
         $result = self::where('id', $id)->first()->toArray();
         return $result;
     }
+    public static function setNewArticle($title, $content)
+    {
+        $new = array(
+            'title' => $title,
+            'content' => $content,
+            'post_date' => date('Y-m-d H:i:s')
+        );
+        return self::insert($new);
+    }
 }

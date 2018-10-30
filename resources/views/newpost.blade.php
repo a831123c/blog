@@ -32,13 +32,19 @@
     <!-- Page Content -->
     <div class="container" style="font-size:20px">
         <form action="/post" method="POST" name="article" onsubmit="return check()">
-            <div style="margin-top:50px" class="row">
-                請輸入標題：<input type="text" name="title">&nbsp;&nbsp;&nbsp;
+            <div class="input-group mb-3" style="margin-top:50px">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">標題</span>
+                </div>
+                <input type="text" name="title" class="form-control" placeholder="標題" aria-label="Username"
+                    aria-describedby="basic-addon1">
                 <input type="submit" class="btn btn-info" value="發文">
             </div>
-            <div style="margin-top:10px;margin-bottom:20px">
-                請輸入內文：<br>
-                <textarea style="margin-top:20px" name="editor"></textarea>
+            <div class="input-group mb-3" style="margin-top:10px;margin-bottom:30px;">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">內文</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea" name="editor"></textarea>
             </div>
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
         </form>
@@ -55,6 +61,8 @@
     <script>
         CKEDITOR.replace("editor");
         CKEDITOR.config.height = '300px';
+        CKEDITOR.config.width = '100%';
+        CKEDITOR.config.allowedContent = true;
 
         function check() {
             if (document.article.title == "" || CKEDITOR.instances["editor"].getData() == "") {

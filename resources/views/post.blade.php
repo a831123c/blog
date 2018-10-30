@@ -66,9 +66,9 @@
                 <p>Posted on {{$posts['post_date']}}</p>
 
                 <hr>
-                <p class="lead">
-                    {{$posts['content']}}
-                </p>
+                <div class="lead">
+                    {!!$posts['content']!!}
+                </div>
                 <hr>
                 @endforeach
 
@@ -83,9 +83,9 @@
                 <p>Posted on {{$post['post_date']}}</p>
 
                 <hr>
-                <p class="lead">
-                    {{$post['content']}}
-                </p>
+                <div class="lead">
+                    {!!$post['content']!!}
+                </div>
                 <hr>
 
                 @endif
