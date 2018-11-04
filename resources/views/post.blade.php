@@ -102,9 +102,18 @@
 
             <!-- Sidebar Widgets Column -->
             <div class="col-md-4">
+                <!-- Side Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">關於文章</h5>
+                    <div class="card-body">
+                        這裡會記錄一下保羅的生活分享，<br>
+                        或者一些雜七雜八的東東<br>
+                        偶而會有一些練蕭威(台)的文章(X)
+                    </div>
+                </div>
                 <!-- Categories Widget -->
                 <div class="card my-4">
-                    <h5 class="card-header">Categories</h5>
+                    <h5 class="card-header">文章分類</h5>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
@@ -136,16 +145,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Side Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Side Widget</h5>
-                    <div class="card-body">
-                        You can put anything you want inside of these side widgets. They are easy to use, and feature
-                        the new Bootstrap 4 card containers!
-                    </div>
-                </div>
-
             </div>
 
         </div>
