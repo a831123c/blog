@@ -118,17 +118,14 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul class="list-unstyled mb-0">
+                                    @foreach ($category as $cat)
                                     <li>
-                                        <a href="#">Web Design</a>
+                                        <a href="#">{{$cat['name']}}</a>
                                     </li>
-                                    <li>
-                                        <a href="#">HTML</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Freebies</a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
+                            <!--
                             <div class="col-lg-6">
                                 <ul class="list-unstyled mb-0">
                                     <li>
@@ -142,6 +139,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <-->
                         </div>
                     </div>
                 </div>

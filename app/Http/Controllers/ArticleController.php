@@ -2,15 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article as Article;
+use App\Models as model;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
     public function index()
     {
-        $post = Article::getNewest();
+        $post = model\Article::getNewest();
+        $category = model\Category::getAllCat();
         $data['post'] = $post;
+        $data['category'] = $category;
         return view('post', $data);
     }
 
@@ -24,16 +26,18 @@ class ArticleController extends Controller
         $title = $request->input('title');
         //change content to html entity
         $content = htmlspecialchars($request->input('editor'));
-        $result = Article::setNewArticle($title, $content);
+        $result = model\Article::setNewArticle($title, $content);
     }
 
     public function show($id)
     {
-        $post = Article::getArticle($id);
+        $post = model\Article::getArticle($id);
         //decode content to HTML
         $post['content'] = htmlspecialchars_decode($post['content']);
         $data['count'] = count($post);
         $data['post'] = $post;
+        $category = model\Category::getAllCat();
+        $data['category'] = $category;
         return view('post', $data);
     }
 
