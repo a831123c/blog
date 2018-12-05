@@ -15,3 +15,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 Route::resource('post', 'ArticleController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
